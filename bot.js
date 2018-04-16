@@ -83,7 +83,11 @@ client.on('message', (message) => {
                 });
             }
 
-        });       
+        }); 
+	if (isCommand('help',message)){
+		message.author.sendMessage("Hello! \n The only command that is available right now is !cp <username> \n Example: !cp HiltonBot")
+		
+	});
         
     }
     
