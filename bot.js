@@ -37,16 +37,17 @@ client.on('message', (message) => {
            	if (body == '{"success":false,"errorMessage":"User not found"}') {
                 	message.channel.send("User not found!")
             	}else{
-                	var st1 = "Here are the gamepasses for "
-                	var reply = st1.concat(ppname)
-                	message.channel.send(reply)
                 	var arr = JSON.parse(body);
                 	var Id = arr.Id;
 			var st1 = "https://www.roblox.com/bust-thumbnail/image?userId=";
-			var st2 = "&width=420&height=420&format=png";
+			var st2 = "&width=100&height=100&format=png";
 			var st3 =  st1.concat(Id);
 			var url = st3.concat(st2);
-			console.log(url);			
+			message.channel.reply(url);
+			
+			var st1 = "Here are the gamepasses for "
+                	var reply = st1.concat(ppname)
+                	message.channel.send(reply)
 
 			// SUITE LANE CHECK
 
