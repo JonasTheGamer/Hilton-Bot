@@ -1,7 +1,7 @@
          
 var prefix = '!';
-const Discord = require('discord.js')
-const client = new Discord.Client()
+const Discord = require('discord.js');
+const client = new Discord.Client();
           
 function isCommand(command, message){
 	var command = command.toLowerCase();
@@ -11,10 +11,10 @@ function isCommand(command, message){
 
 client.on('message', (message) => {
 	if (message.author.bot) return; // Dont answer yourself.
-    var args = message.content.split(/[ ]+/)
+	var args = message.content.split(/[ ]+/)
     
-    if(isCommand('Ping', message)){
-    	message.reply('Pong');
-    }
+	if(isCommand('Ping', message)){
+		message.reply('Pong');
+	}
 });
-client.login(process.env.BOT_TOKEN)
+client.login(process.env.BOT_TOKEN);
