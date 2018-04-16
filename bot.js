@@ -8,6 +8,9 @@ function isCommand(command, message){
 	var content = message.content.toLowerCase();
 	return content.startsWith(prefix + command);
 }
+client.on('ready', () => {
+  client.user.setGame('GAME HERE')
+})
 console.log("I'm here!")
 client.on('message', (message) => {
 	console.log(message.content)
