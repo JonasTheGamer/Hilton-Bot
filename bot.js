@@ -20,7 +20,7 @@ client.on('message', (message) => {
 	if (message.author.bot) return; // Dont answer yourself.
    	 var args = message.content.split(/[ ]+/)
    	 if (message.channel.isPrivate) {
-		message.channel.reply("Just use the server please, you don't have to DM me. :smile:")
+		console.log("A private message has been sent to me!")
    	 } 
 
    	 if (isCommand('cp',message)){
