@@ -18,7 +18,7 @@ client.on('message', (message) => {
 	var args = message.content.split(/[ ]+/)
     
 	if(isCommand('Ping', message)){
-		message.reply('Pong');
+		message.reply('LOL');
 	}
 });
 client.login(process.env.BOT_TOKEN);
