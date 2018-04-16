@@ -42,9 +42,11 @@ client.on('message', (message) => {
                 	message.channel.send(reply)
                 	var arr = JSON.parse(body);
                 	var Id = arr.Id;
-			message.channel.send("Profile pic:, {
-			    file: "https://www.roblox.com/bust-thumbnail/image?userId=" + Id + "&width=420&height=420&format=png" // Or replace with FileOptions object
-			});
+			var st1 = "https://www.roblox.com/bust-thumbnail/image?userId=";
+			var st2 = "&width=420&height=420&format=png";
+			var st3 =  st1.concat(Id);
+			var url = st3.concat(st2);
+			console.log(url);			
 
 			// SUITE LANE CHECK
 
