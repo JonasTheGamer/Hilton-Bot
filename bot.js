@@ -6,7 +6,7 @@ var request = require("request");
 var client = new discord.Client();
 
 //Login into roblox, but not needed for this bot
-roblox.login({username: "marketmanager1", password: "Digitaalsloefje20Nummerke5"}).then((success) => {
+roblox.login({username: "marketmanager1", password: process.env.ROBLOX_PW}).then((success) => {
 }).catch(() => {console.log("Sorry, it failed.");}); 
 
 function isCommand(command, message){
