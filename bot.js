@@ -17,6 +17,7 @@ function isCommand(command, message){
 
 var started = true
 client.on('message', (message) => {
+	console.log(message.channel.type);
 	if (message.author.bot) return; // Dont answer yourself.
    	 var args = message.content.split(/[ ]+/)
    	 if (message.channel.isPrivate) {
