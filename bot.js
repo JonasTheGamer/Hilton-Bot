@@ -43,7 +43,7 @@ client.on('message', (message) => {
 			var st2 = "&width=100&height=100&format=png";
 			var st3 =  st1.concat(Id);
 			var url = st3.concat(st2);
-			message.channel.reply(url);
+			message.channel.send(url);
 			
 			var st1 = "Here are the gamepasses for "
                 	var reply = st1.concat(ppname)
