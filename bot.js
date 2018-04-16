@@ -20,7 +20,7 @@ client.on('message', (message) => {
 	console.log(message.channel.type);
 	if (message.author.bot) return; // Dont answer yourself.
    	 var args = message.content.split(/[ ]+/)
-   	 if (message.channel.isPrivate) {
+   	 if (message.channel.type == "dm") {
 		console.log("A private message has been sent to me!")
    	 } 
 
