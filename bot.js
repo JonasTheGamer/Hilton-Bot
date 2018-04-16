@@ -21,7 +21,7 @@ client.on('message', (message) => {
 	if (message.author.bot) return; // Dont answer yourself.
    	 var args = message.content.split(/[ ]+/)
    	 if (message.channel.type == "dm") {
-		console.log("A private message has been sent to me!")
+		message.channel.send("Please don't DM me. :smile:")
    	 } 
 
    	 if (isCommand('cp',message)){
