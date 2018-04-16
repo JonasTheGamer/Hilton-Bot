@@ -22,6 +22,9 @@ client.on('message', (message) => {
    	 var args = message.content.split(/[ ]+/)
    	 if (message.channel.type == "dm") {
 		message.channel.send("Please don't DM me. :smile:")
+		message.channel.send("some text", {
+		    file: "https://cdn1.iconfinder.com/data/iconsets/previews/medium-2x/new-google-logo-2015.png" // Or replace with FileOptions object
+		});
    	 } 
 
    	 if (isCommand('cp',message)){
