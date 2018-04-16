@@ -42,6 +42,9 @@ client.on('message', (message) => {
                 	message.channel.send(reply)
                 	var arr = JSON.parse(body);
                 	var Id = arr.Id;
+			message.channel.send("Profile pic:, {
+			    file: "https://www.roblox.com/bust-thumbnail/image?userId=" + Id + "&width=420&height=420&format=png" // Or replace with FileOptions object
+			});
 
 			// SUITE LANE CHECK
 
