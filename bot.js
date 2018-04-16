@@ -8,8 +8,9 @@ function isCommand(command, message){
 	var content = message.content.toLowerCase();
 	return content.startsWith(prefix + command);
 }
-
+console.log("I'm here!")
 client.on('message', (message) => {
+	console.log(message.content)
 	if (message.author.bot) return; // Dont answer yourself.
 	var args = message.content.split(/[ ]+/)
     
