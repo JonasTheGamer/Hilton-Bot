@@ -23,7 +23,7 @@ client.on('message', (message) => {
    	 if (message.channel.type == "dm") {
 		message.channel.send("Please don't DM me. :smile:")
 		message.channel.send("some text", {
-		    file: "https://cdn1.iconfinder.com/data/iconsets/previews/medium-2x/new-google-logo-2015.png" // Or replace with FileOptions object
+		    file: "https://www.roblox.com/bust-thumbnail/image?userId=114962047&width=420&height=420&format=png" // Or replace with FileOptions object
 		});
    	 } 
 
