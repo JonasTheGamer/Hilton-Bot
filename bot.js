@@ -82,20 +82,9 @@ client.on('message', (message) => {
                 });
             }
 
-        });
-        
+        });       
         
     }
-    if (isCommand('getlastpost',message)){
-        var groupid = args[1]
-        roblox.getWall(groupid)
-        .then(function(wall){
-            message.reply(wall.posts.post[1].content)
-            
-        })
-    }
-
-    
     
 });
 
