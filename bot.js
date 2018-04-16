@@ -22,9 +22,6 @@ client.on('message', (message) => {
    	 var args = message.content.split(/[ ]+/)
    	 if (message.channel.type == "dm") {
 		message.channel.send("Please don't DM me. :smile:")
-		message.channel.send("some text", {
-		    file: "https://www.roblox.com/bust-thumbnail/image?userId=114962047&width=420&height=420&format=png" // Or replace with FileOptions object
-		});
    	 } 
 
    	 if (isCommand('cp',message)){
