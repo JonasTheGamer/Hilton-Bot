@@ -23,8 +23,9 @@ client.on('message', (message) => {
    	 if (message.channel.type == "dm") {
 		 if (message == "hi"){
 			 message.channel.send("Hello! :wave:");
-		 }
+		 }else{
 		message.channel.send("I'd rather you not direct message me. Go to any server where I'm in, to use commands. :smile:")
+		 }
    	 } 
 
    	 if (isCommand('cp',message)){
